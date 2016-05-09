@@ -1,0 +1,20 @@
+#mapwrapper {
+	min-height: 400px;
+	border: 2px solid #E8E8E8;
+    margin-bottom: 50px;       
+    .anchorBL{  
+      display:none;  
+    }
+    .iw_poi_title {
+      color: #C52;
+      font-weight: bold;
+    }
+    .iw_poi_content {
+      font-size: 12px;
+      color: #737373;
+      margin-top: 10px;
+    }
+}
+#contact-content {
+	min-height: 1500px;
+}

@@ -1,0 +1,217 @@
+﻿/* TABLE OF CONTNTS
+
+1) Boxes
+2) Image Boxes
+* */
+
+/* 1 Boxes
+---------------------------------- */
+.box {
+  text-align: center;
+  margin: 0 10px 10px 0;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  font-size: 0;
+  float: left;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.box.block {
+  display: block;
+  float: none;
+  margin: 0 auto!important;
+}
+.box.block + h2 { 
+  margin-top: 0;
+}
+.box i {
+  font-size: 36px;
+  line-height: 60px;
+}
+.box.small {
+  margin: 0 5px 5px 0;
+  width: 45px;
+  height: 45px;
+}
+.box.small i {
+  font-size: 24px;
+  line-height: 45px;
+}
+.box.gray-bg:hover {
+  color: $color-box-hover;
+}
+.box.default-bg:hover {
+  background-color: #fff;
+  border: 1px solid $color-box-hover;
+}
+.box.default-bg:hover * {
+  color: $color-box-hover;
+}
+.box.dark-bg:hover {
+  background-color: #fff;
+  border: 1px solid #666;
+}
+.box.dark-bg:hover * {
+  color: #666;
+}
+.box-style-1 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+.grid-space-10 .box-style-1 {
+  margin: 10px 0;
+}
+.box-style-1 i {
+  font-size: 90px;
+  margin: 15px 0 5px;
+  text-align: center;
+}
+.box-style-1:not(.team-member):hover i {
+  color: $color-box-hover;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.box-style-1.default-bg:hover i,
+.box-style-1.dark-bg:hover i {
+  color: inherit;
+}
+.box-style-2 {
+  margin-top: 20px;
+}
+.box-style-2 i {
+  font-size: 36px;
+  line-height: 60px;
+}
+.box-style-2 .icon-container {
+  float: left;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.box-style-2 .body {
+  margin-left: 80px;
+}
+.box-style-2 h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+.box-style-2:hover .icon-container {
+  border: 1px solid #666;
+}
+.box-style-2:hover .default-bg {
+  background-color: #fff;
+  border: 1px solid $color-box-hover;
+}
+.box-style-2:hover .default-bg * {
+  color: $color-box-hover;
+}
+.box-style-2:hover .dark-bg {
+  background-color: #fff;
+  border: 1px solid #666;
+}
+.box-style-2:hover .dark-bg * {
+  color: #666;
+}
+.box-style-2:hover .white-bg * {
+  color: $color-box-hover;
+}
+.box-style-3 {
+  margin-top: 20px;
+}
+.box-style-3 i {
+  font-size: 22px;
+  line-height: 45px;
+}
+.box-style-3 .icon-container {
+  float: left;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.box-style-3 .body {
+  margin-left: 80px;
+}
+.box-style-3 h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+.box-style-3:hover .icon-container {
+  border: 1px solid #666;
+}
+.box-style-3:hover .default-bg {
+  background-color: #fff;
+  border: 1px solid $color-box-hover;
+}
+.box-style-3:hover .default-bg * {
+  color: $color-box-hover;
+}
+.box-style-3:hover .dark-bg {
+  background-color: #fff;
+  border: 1px solid #666;
+}
+.box-style-3:hover .dark-bg * {
+  color: #666;
+}
+.box-style-3:hover .white-bg * {
+  color: $color-box-hover;
+}
+.panel-body i {
+  width: 35px;
+  text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px) {
+  .box-style-3.right .icon-container {
+    float: right;
+  }
+  .box-style-3.right .body {
+    margin-right: 80px;
+    text-align: right;
+    margin-left: 0;
+  }
+}
+
+/* 2 Image Boxes
+---------------------------------- */
+.image-box {
+  background-color: #fafafa;
+  border: 1px solid #f3f3f3;
+}
+.grid-space-0 .image-box {
+  border: none;
+}
+.image-box h3.title {
+  margin-top: 0;
+}
+.image-box .btn {
+  white-space: normal;
+  border-color: transparent;
+}
+.image-box .btn-block {
+  margin: 0;
+}
+.image-box-body {
+  padding: 20px 15px 15px;
+}

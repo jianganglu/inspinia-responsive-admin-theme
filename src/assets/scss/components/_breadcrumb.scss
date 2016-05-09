@@ -1,0 +1,16 @@
+﻿/* Breadcurmb
+-------------------------------------- */
+
+.page-intro {
+  padding: 10px 0;
+  -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.06) inset;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dadada;
+}
+.banner + .page-intro {
+  margin-top: -56px;
+  position: relative;
+  background-color: rgba(250, 250, 250, 0.9);
+  z-index: 2;
+}

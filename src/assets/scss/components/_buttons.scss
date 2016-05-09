@@ -1,0 +1,245 @@
+﻿/* Buttons
+---------------------------------- */
+.btn {
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  min-width: 160px;
+  text-align: center;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin: 10px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+.btn.btn-lg {
+  padding: 17px 12px;
+  font-size: 18px;
+  min-width: 210px;
+}
+.btn.btn-sm {
+  padding: 8px;
+  font-size: 12px;
+  min-width: 105px;
+}
+.btn.radius {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+.moving {
+  -webkit-animation: moving 1.7s ease-out infinite;
+  animation: moving 1.7s ease-out infinite;
+  position: relative;
+  top: -30px;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+.btn-remove {
+  font-size: 10px;
+  padding: 3px 15px;
+  min-width: 0;
+}
+@-webkit-keyframes moving {
+  0% {
+    top: -30px;
+  }
+  60% {
+    top: 0px;
+  }
+}
+@keyframes moving {
+  0% {
+    top: -30px;
+  }
+  60% {
+    top: 0px;
+  }
+}
+
+/* Dark Buttons */
+.btn-dark {
+  color: #f1f1f1;
+  background-color: #333;
+  border-color: #333;
+}
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.active,
+.open .dropdown-toggle.btn-dark {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+
+/* Gray Buttons */
+.btn-gray {
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+  color: #fff;
+  background-color: $color-btn-background;
+  border-color: $color-btn-border;
+}
+
+/* Light Gray Buttons */
+.btn-light-gray {
+  color: #333;
+  background-color: #fafafa;
+  border-color: #f3f3f3;
+}
+.btn-light-gray:hover,
+.btn-light-gray:focus,
+.btn-light-gray:active,
+.btn-light-gray.active,
+.open .dropdown-toggle.btn-light-gray {
+  color: #fff;
+  background-color: $color-btn-background;
+  border-color: $color-btn-border;
+}
+.default-bg .btn-light-gray {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.default-bg .btn-light-gray:hover,
+.default-bg .btn-light-gray:focus,
+.default-bg .btn-light-gray:active,
+.default-bg .btn-light-gray.active,
+.default-bg .open .dropdown-toggle.btn-light-gray {
+  color: #333;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+
+/* The color of default buttons is the color of current color scheme */
+.btn-default {
+  background-color: $color-btn-background;
+  color: #fff !important;
+  border-color: $color-btn;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #fff !important;
+  background-color: $color-btn;
+  border-color: $color-btn;
+}
+.default-bg .btn-default {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+}
+.default-bg .btn-default:hover,
+.default-bg .btn-default:focus,
+.default-bg .btn-default:active,
+.default-bg .btn-default.active,
+.default-bg .open .dropdown-toggle.btn-default {
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: transparent;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default {
+  background-color: $color-btn;
+  border-color: $color-btn;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+
+/* Button with transparent bg */
+.btn-white {
+  background-color: transparent;
+  color: $color-btn;
+  border: 1px solid $color-btn-border;
+}
+.footer .btn-white,
+.subfooter .btn-white {
+  color: inherit;
+}
+.footer .btn-white:hover,
+.subfooter .btn-white:hover {
+  color: #fff;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.open .dropdown-toggle.btn-white {
+  color: #fff;
+  background-color: $color-btn;
+  border-color: $color-btn;
+}
+.default-bg .btn-white {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+.default-bg .btn-white:hover,
+.default-bg .btn-white:focus,
+.default-bg .btn-white:active,
+.default-bg .btn-white.active,
+.default-bg .open .dropdown-toggle.btn-white {
+  color: #333;
+  background-color: #fafafa;
+  border-color: #fafafa;
+}
+.footer-content .btn-white {
+  color: #999;
+  background-color: transparent;
+  border-color: #555;
+}
+.btn-default .badge {
+  color: #666;
+  background-color: #fff;
+  border: none;
+}
+
+/*Button background transitions*/
+.btn-hvr {
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hvr-sweep-to-right:before,
+.hvr-sweep-to-left:before,
+.hvr-sweep-to-bottom:before,
+.hvr-sweep-to-top:before,
+.hvr-bounce-to-right:before,
+.hvr-bounce-to-left:before,
+.hvr-bounce-to-bottom:before,
+.hvr-bounce-to-top:before,
+.hvr-radial-out:before,
+.hvr-rectangle-out:before,
+.hvr-shutter-out-horizontal:before,
+.hvr-shutter-out-vertical:before {
+  background: $color-btn;
+}
+
+.hvr-radial-in:before,
+.hvr-rectangle-in:before,
+.hvr-shutter-in-horizontal:before,
+.hvr-shutter-in-vertical:before {
+  background: #fafafa;
+}

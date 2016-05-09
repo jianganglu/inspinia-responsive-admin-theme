@@ -1,0 +1,344 @@
+/* TABLE OF CONTENTS
+
+1) Header top
+2) Header top social-links
+3) Header top dropdowns
+* */
+
+/* 1 Header top
+----------------------------------------------------------------------------- */
+.header-top {
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #dadada;
+	-webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
+	.dark {
+		background-color: #27272A;
+		border-bottom: 1px solid #000;
+		color: #cdcdcd;
+	}
+	.banner {
+		padding: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-bottom: none;
+	}
+}
+
+/* 2 Header top social-links
+----------------------------------------------------------------------------- */
+.header-top .social-links {
+	margin: 0;
+	li {
+		padding: 3px 5px 2px;
+		border-right: 1px solid #e3e3e3;
+		margin: 0;
+		a {
+			font-size: 16px;
+			border: none;
+			width: 25px;
+			height: 30px;
+			color: #999999;
+			background-color: transparent;
+			border-color: transparent;
+			i {
+				line-height: 30px;
+			}
+		}
+		a:hover {
+			color: #cd3c2e;
+		}
+	}
+	li:hover {
+		background-color: #fafafa;
+	}
+	li:last-child {
+		border-right: none;
+	}
+}
+
+.dark.header-top .social-links {
+	li {
+		border-right: 1px solid #3d3d3d;
+		a {
+			color: #999999;
+		}
+	}
+	li:last-child {
+		border-right: none;
+	}
+	li:hover {
+		background-color: transparent;
+	}
+} 
+
+/* Social icons block hover
+-------------------------------------------- */
+.header-top .social-links li.twitter a:hover {
+	color: #55acee;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.skype a:hover {
+	color: #00aff0;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.linkedin a:hover {
+	color: #0976b4;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.googleplus a:hover {
+	color: #dd4b39;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.youtube a:hover {
+	color: #b31217;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.flickr a:hover {
+	color: #ff0084;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.facebook a:hover {
+	color: #3b5998;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.pinterest a:hover {
+	color: #cb2027;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.instagram a:hover {
+	color: #517fa4;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.vimeo a:hover {
+	color: #aad450;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.tumblr a:hover {
+	color: #32506d;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.soundcloud a:hover {
+	color: #ff3a00;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.foursquare a:hover {
+	color: #0072b1;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.dribbble a:hover {
+	color: #ea4c89;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.behance a:hover {
+	color: #053eff;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.vine a:hover {
+	color: #00a478;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.stumbleupon a:hover {
+	color: #f74425;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* 3 Header top dropdowns
+----------------------------------------------------------------------------- */
+.header-top-dropdown {
+	float: right;
+	font-size: 0;
+	text-align: right;
+}
+.header-top-dropdown .dropdown>button>a {
+	color: #999;
+	text-decoration: none;
+}
+.header-top-dropdown .dropdown>button>a:hover {
+	color: #e84c3d;
+	background-color: #fafafa;
+	border-right-color: #e3e3e3;
+}
+.header-top-dropdown .dropdown>button {
+	border-right: 1px solid #e3e3e3;
+	border-left: 1px solid transparent;
+}
+.dark .header-top-dropdown .dropdown>button {
+	border-right: 1px solid #515151;
+}
+.header-top-dropdown .dropdown:last-child>button {
+	border-right-color: transparent;
+}
+.header-top-dropdown .dropdown>button {
+	padding: 8px 10px;
+	margin: 0;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	min-width: 0;
+	background-color: transparent;
+	-moz-box-shadow: none !important;
+	-o-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-transform: none;
+}
+.dark.header-top .header-top-dropdown .dropdown>button {
+	border-right: 1px solid #3d3d3d;
+}
+.dark.header-top .header-top-dropdown .dropdown:last-child>button {
+	border-right-color: transparent;
+}
+.header-top-dropdown .dropdown>button i {
+	padding-right: 5px;
+	width: 15px;
+}
+.header-top-dropdown .dropdown.open>button,
+.header-top-dropdown .dropdown>button:hover {
+	color: #e84c3d;
+	background-color: #fafafa;
+	border-right-color: #e3e3e3;
+}
+.dark.header-top .header-top-dropdown .dropdown.open>button,
+.dark.header-top .header-top-dropdown .dropdown>button:hover {
+	color: #FFFFFF!important;
+	background-color: #36373C;
+	border-right-color: #3d3d3d;
+}
+.dark.header .header-top-dropdown .dropdown.open>button,
+.dark.header .header-top-dropdown .dropdown>button:hover {
+	color: #FFFFFF!important;
+	background-color: #36373C;
+	border-right-color: #515151;
+}
+.header-top-dropdown .dropdown:first-child.open>button,
+.header-top-dropdown .dropdown:first-child>button:hover {
+	border-left-color: #e3e3e3;
+}
+.dark.header-top .header-top-dropdown .dropdown:first-child.open>button,
+.dark.header-top .header-top-dropdown .dropdown:first-child>button:hover {
+	border-left-color: #3d3d3d;
+}
+.header .header-top-dropdown .dropdown>button {
+	padding: 3px 10px;
+}
+.header .header-top-dropdown .dropdown.open>button,
+.header .header-top-dropdown .dropdown>button:hover {
+	background-color: transparent;
+}
+.header .header-top-dropdown .dropdown:first-child.open>button,
+.header .header-top-dropdown .dropdown:first-child>button:hover {
+	border-left-color: transparent;
+}
+.header .header-top-dropdown .dropdown:last-child.open>button,
+.header .header-top-dropdown .dropdown:last-child>button:hover {
+	border-right-color: transparent;
+}
+.header .header-top-dropdown .dropdown-menu {
+	margin-top: 27px;
+}
+.header-top-dropdown .dropdown-menu {
+	z-index: 103;
+	padding: 20px;
+	min-width: 280px;
+	margin-top: 0px;
+}
+.header-top-dropdown .ul-lan {
+	min-width: 70px;
+	padding: 15px;
+}
+.header-top-dropdown .ul-lan #lan{
+	min-width: 70px;
+	list-style: none;
+	padding: 5px;
+}  
+.header-top-dropdown .ul-lan #lan li{
+	line-height: 30px;
+}
+.header-top-dropdown .ul-lan #lan a{
+	color: #666666;
+  text-decoration: none;
+}
+.header-top-dropdown .search-box .form-group {
+	margin-bottom: 0;
+}
+.header-top-dropdown form {
+	margin: 0;
+}
+.header-top-dropdown .login-form span {
+	margin: 0 3px;
+}
+.header-top-dropdown .login-form ul {
+	padding-left: 0;
+	list-style-position: inside;
+	padding: 5px 0;
+}
+.header-top-dropdown .login-form .social-links {
+	display: inline-block;
+	margin: 0;
+}
+.dark .header-top-dropdown .login-form a {
+	color: #cdcdcd;
+	text-decoration: underline;
+}
+.dark .header-top-dropdown .login-form a:hover {
+	text-decoration: none;
+}
+.header .header-top-dropdown {
+	margin-top: 19px;
+}
+.dark.header .header-top-dropdown {
+	color: #cdcdcd;
+}
+.fixed-header-on .header .header-top-dropdown {
+	margin-top: 13px;
+}
+.fixed-header-on .header .header-top-dropdown .dropdown-menu {
+	margin-top: 19px;
+}
+
+/* Small devices (tablets, 480px and below) */
+@media (max-width: 480px) {
+	.header-top-dropdown .btn-group {
+		position: static;
+	}
+	.header-top-dropdown .dropdown-menu {
+		right: 15px!important;
+		width: 100%;
+	}
+}
+
+.header {
+	padding: 20px 0;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fff;
+}
+.header.dark {
+	background-color: #36373C;
+	border-top: 1px solid #515151;
+	border-bottom-color: transparent!important;
+}
+.header.header-small {
+	padding: 10px 0;
+}
+.banner {
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #eaeaea;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "front-end-automation-framework",
+  "description": "Gulp Automation Framework",
+  "main": "index.js",
+  "authors": [
+    "Jiangang Lu"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Gulp"
+  ],
+  "moduleType": [],
+  "homepage": "http://jianganglu.github.io/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  }
+}

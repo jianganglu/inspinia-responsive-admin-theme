@@ -1,0 +1,42 @@
+﻿/* WP-Pagenavi
+-------------------------------- */
+.wp-pagenavi {
+  margin: 20px 0 40px;
+  font-size: 12px;
+  text-align: left;
+
+  a.page,
+  a.first,
+  a.last,
+  span,
+  &>a {
+    padding: 10px 15px;
+    margin: 0 5px 0 0;
+    border: 1px solid #f3f3f3;
+    line-height: 1;
+    background-color: #fafafa;
+    display: inline-block;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+      background-color: $color-wppagenavi-a-background;
+      border-color: $color-wppagenavi-border;
+    }
+  }
+
+  span {
+
+    &.current {
+      color: #ffffff;
+      background-color: $color-wppagenavi-a-background;
+      border-color: $color-wppagenavi-border;
+      line-height: 1;
+    }
+  }
+}

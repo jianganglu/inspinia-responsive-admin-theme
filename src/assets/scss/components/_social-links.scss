@@ -1,0 +1,171 @@
+﻿/* Social icons block
+-------------------------------- */
+.social-links {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 40px 0 20px 0;
+}
+.social-links li {
+  display: inline-block;
+  margin: 0 2px 2px 0;
+}
+.social-links li a {
+  width: 45px;
+  height: 45px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  background: $color-social-links-a-background;
+  border: 1px solid $color-social-links-a-border;
+  color: #fff;
+}
+.social-links.large li a {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+}
+.social-links.light li a {
+  background: #fafafa;
+  border: 1px solid #f3f3f3;
+  color: inherit;
+}
+.social-links.dark li a {
+  background: #454545;
+  border: 1px solid #333;
+  color: #acacac;
+}
+.social-links.radius-5px li a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.social-links.circle li a {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.social-links li a:hover {
+  background-color: transparent;
+  border-color: #cd3c2e;
+  color: #cd3c2e;
+}
+.social-links.dark li a:hover {
+  background: #fafafa;
+  border: 1px solid #acacac;
+  color: inherit;
+}
+.social-links.light li a:hover {
+  border: 1px solid #d2d2d2;
+  color: #333333;
+}
+.social-links li a i {
+  line-height: 44px;
+}
+.social-links.large li a i {
+  line-height: 60px;
+}
+/* Social icons block hover
+---------------------------------- */
+.social-links li.twitter a:hover,
+.colored.social-links li.twitter a {
+  background-color: #55acee;
+  border-color: #55acee;
+  color: #fff;
+}
+.social-links li.skype a:hover,
+.colored.social-links li.skype a {
+  background-color: #00aff0;
+  border-color: #00aff0;
+  color: #fff;
+}
+.social-links li.linkedin a:hover,
+.colored.social-links li.linkedin a {
+  background-color: #0976b4;
+  border-color: #0976b4;
+  color: #fff;
+}
+.social-links li.googleplus a:hover,
+.colored.social-links li.googleplus a {
+  background-color: #dd4b39;
+  border-color: #dd4b39;
+  color: #fff;
+}
+.social-links li.youtube a:hover,
+.colored.social-links li.youtube a {
+  background-color: #b31217;
+  border-color: #b31217;
+  color: #fff;
+}
+.social-links li.flickr a:hover,
+.colored.social-links li.flickr a {
+  background-color: #ff0084;
+  border-color: #ff0084;
+  color: #fff;
+}
+.social-links li.facebook a:hover,
+.colored.social-links li.facebook a {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff;
+}
+.social-links li.pinterest a:hover,
+.colored.social-links li.pinterest a {
+  background-color: #cb2027;
+  border-color: #cb2027;
+  color: #fff;
+}
+.social-links li.instagram a:hover,
+.colored.social-links li.instagram a {
+  background-color: #517fa4;
+  border-color: #517fa4;
+  color: #fff;
+}
+.social-links li.vimeo a:hover,
+.colored.social-links li.vimeo a {
+  background-color: #aad450;
+  border-color: #aad450;
+  color: #fff;
+}
+.social-links li.tumblr a:hover,
+.colored.social-links li.tumblr a {
+  background-color: #32506d;
+  border-color: #32506d;
+  color: #fff;
+}
+.social-links li.soundcloud a:hover,
+.colored.social-links li.soundcloud a {
+  background-color: #ff3a00;
+  border-color: #ff3a00;
+  color: #fff;
+}
+.social-links li.foursquare a:hover,
+.colored.social-links li.foursquare a {
+  background-color: #0072b1;
+  border-color: #0072b1;
+  color: #fff;
+}
+.social-links li.dribbble a:hover,
+.colored.social-links li.dribbble a {
+  background-color: #ea4c89;
+  border-color: #ea4c89;
+  color: #fff;
+}
+.social-links li.behance a:hover,
+.colored.social-links li.behance a {
+  background-color: #053eff;
+  border-color: #053eff;
+  color: #fff;
+}
+.social-links li.vine a:hover,
+.colored.social-links li.vine a {
+  background-color: #00a478;
+  border-color: #00a478;
+  color: #fff;
+}
+.social-links li.stumbleupon a:hover,
+.colored.social-links li.stumbleupon a {
+  background-color: #f74425;
+  border-color: #f74425;
+  color: #fff;
+}
