@@ -35,6 +35,10 @@ var paths = {
   js: {
     src: basePaths.src + 'js/*.js',
     dst: basePaths.dst + 'js'
+  },
+  fonts: {
+    src: basePaths.src + 'fonts/**/*',
+    dst: basePaths.dst + 'fonts'
   }
 };
 
@@ -123,6 +127,12 @@ gulp.task('clean', function(cb) {
 gulp.task('html', function() {
   gulp.src(paths.html.src)
     .pipe(gulp.dest(paths.html.dst));
+});
+
+// Copy everything under `src/languages` indiscriminately
+gulp.task('fonts', function() {
+  return gulp.src(paths.fonts.src)
+  .pipe(gulp.dest(paths.fonts.dst));
 });
 
 /**
@@ -334,13 +344,14 @@ gulp.task('buildZip', function() {
 
 // Package Distributable Theme
 gulp.task('build', ['clean'], function(cb) {
-  runSequence(['html', 'images', 'vendorStyles', 'styles', 'rjs'], 'buildZip','cleanupFinal', cb);
+  runSequence(['html', 'fonts', 'images', 'vendorStyles', 'styles', 'rjs'], 'buildZip','cleanupFinal', cb);
 });
 
 // Watch Task
-gulp.task('default', ['html', 'images', 'vendorStyles', 'styles', 'rjs', 'browser-sync'], function () {
+gulp.task('default', ['html', 'fonts', 'images', 'vendorStyles', 'styles', 'rjs', 'browser-sync'], function () {
   gulp.watch(['dist/**']).on('change', browserSync.reload);
-  gulp.watch('src/**/*.html', ['html'])
+  gulp.watch('src/**/*.html', ['html']);
+  gulp.watch('src/assets/fonts/**/*', ['fonts']);
   gulp.watch('src/assets/img/**/*', ['images']);
   gulp.watch('src/assets/img/sprites/**/*', ['sprite']);
   gulp.watch('src/assets/vendor/**/*', ['vendorStyles']);

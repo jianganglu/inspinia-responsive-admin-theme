@@ -1,8 +1,116 @@
+/* TABLE OF CONTENTS
+
+1) MARGINS & PADDINGS
+2) BACKGROUNDS
+
+* */
 body {
-  font: 13px "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
   background-color: #2f4050;
   color: #676a6c;
   overflow-x: hidden;
+}
+
+#wrapper {
+  max-width: 1300px;
+}
+
+.block {
+  display: block;
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e7eaec;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.btn-primary {
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.btn-primary.active:focus {
+  background-color: #18a689;
+  border-color: #18a689;
+  color: #FFFFFF;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #1dc5a3;
+  border-color: #1dc5a3;
+}
+
+/* 1 MARGINS & PADDINGS 
+--------------------------------*/
+.m-t-xs {
+  margin-top: 5px;
+}
+
+/* 2 BACKGROUNDS
+--------------------------------*/
+.gray-bg {
+  background-color: #f3f3f4;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+/* 3 COLORS
+--------------------------------*/
+.text-muted {
+  color: #888;
 }
 
 #wrapper {
@@ -12,4 +120,16 @@ body {
 
 #page-wrapper {
   margin: 0 0 0 220px;
+}
+
+#page-wrapper {
+  position: relative;
+  min-height: 2002px;
+  padding: 0 15px;
+}
+
+.navbar-static-side,
+.pace-done li.active,
+.pace-done #page-wrapper {
+  transition: all .4s;
 }
